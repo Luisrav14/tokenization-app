@@ -1,17 +1,24 @@
 import React from "react";
-
-import { Navbar, Container, Nav, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
+import images from "../assets/images";
+import { Link } from "react-router-dom";
+import { Navbar, Container, Nav, Form, Button, NavDropdown, Card } from "react-bootstrap";
 
 export default function NavBar() {
   return (
-    <Navbar className="shadow-sm" bg="dark" expand="lg" variant="dark" sticky="top">
+    <Navbar className="shadow" bg="dark" expand="lg" variant="dark" sticky="top">
       <Container fluid>
-        <Navbar.Brand href="/">ReactJS</Navbar.Brand>
+        <Navbar.Brand href="/" alt="logo">
+          <img src={images.LogoNav} className="navbar-logo" alt="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto"></Nav>
-          <Nav className="my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-            <Nav.Link href="#action1">Home</Nav.Link>
+          <Nav className="my-4 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
+            <Nav.Link href="#action1">
+              <Link to="/" className="text-decoration-none text-secondary">
+                Home
+              </Link>
+            </Nav.Link>
             <Nav.Link href="#action2">About</Nav.Link>
             <Nav.Link href="#">Profile</Nav.Link>
             <NavDropdown title="Services" id="navbarScrollingDropdown">
@@ -22,8 +29,11 @@ export default function NavBar() {
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
-            <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="primary">
+              <Link to="/signup" className="text-white text-decoration-none">
+                Registration
+              </Link>
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Container>
