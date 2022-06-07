@@ -7,7 +7,7 @@ import { AppRouter } from "./routes/AppRouter";
 
 export const App = () => {
   return (
-    <MoralisProvider appId="5777" serverUrl="http://localhost:8545">
+    <MoralisProvider appId="383414847825" serverUrl="http://smart1.zeniq.network:8545">
       <AppRouter />
     </MoralisProvider>
   );

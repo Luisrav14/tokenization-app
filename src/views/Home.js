@@ -36,7 +36,7 @@ export const Home = () => {
             </div>
             </div>
           <div className="col-lg-5 align-items-stretch order-1 order-lg-2 mb-5" >
-          <img className="rounded shadow shadow-sm" src={images.AboutImage}  alt="about" />
+          <img className=" image-max-width rounded shadow shadow-sm" src={images.AboutImage}  alt="about" />
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@ export const Home = () => {
                   <h5 className="card-title mb-3">Luis Raul Valenzuela Martinez</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
                   </a> */}
-                  <p className="card-text mb-0">Developer Fron-End</p>
+                  <p className="card-text mb-0">Developer full stack</p>
                 </div>
                 <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div className="d-flex align-items-end justify-content-between"> </div>
@@ -145,7 +145,7 @@ export const Home = () => {
                   <h5 className="card-title mb-3">Ernesto Amaya Rocha</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
                   </a> */}
-                  <p className="card-text mb-0">Developer Fron-End</p>
+                  <p className="card-text mb-0">Developer full stack</p>
                 </div>
                 <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div className="d-flex align-items-end justify-content-between"> </div>
@@ -160,7 +160,7 @@ export const Home = () => {
                   <h5 className="card-title mb-3">Pablo Cesar Cordova Tapia</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
                   </a> */}
-                  <p className="card-text mb-0">Developer Back-End</p>
+                  <p className="card-text mb-0">Developer full stack</p>
                 </div>
                 <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div className="d-flex align-items-end justify-content-between"> </div>
@@ -175,7 +175,7 @@ export const Home = () => {
                   <h5 className="card-title mb-3">Paola Rosales Verdín</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
                   </a> */}
-                  <p className="card-text mb-0">Master class innovation</p>
+                  <p className="card-text mb-0">Developer full stack</p>
                 </div>
                 <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div className="d-flex align-items-end justify-content-between"> </div>
@@ -190,7 +190,7 @@ export const Home = () => {
                   <h5 className="card-title mb-3">Ramon Morales Sanchez</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
                   </a> */}
-                  <p className="card-text mb-0">Developer Back-end</p>
+                  <p className="card-text mb-0">Developer full stack</p>
                 </div>
                 <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div className="d-flex align-items-end justify-content-between"> </div>

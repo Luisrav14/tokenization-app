@@ -160,3 +160,9 @@
 .icon-user-register {
   padding: 6px 9px;
 }
+
+.image-max-width {
+  max-width: 380px;
+  display: block;
+  margin: 0 auto;
+}
