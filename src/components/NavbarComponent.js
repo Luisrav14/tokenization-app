@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import images from "../assets/images";
 
@@ -13,6 +13,10 @@ export const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto"></Nav>
+           <NavDropdown className="btn btn-primary dropleft" title="Registration" id="navbarScrollingDropdown">
+          <NavDropdown.Item href="/signup">Registrate company</NavDropdown.Item>
+          <NavDropdown.Item href="/employed-create">Registrate employs</NavDropdown.Item>
+          </NavDropdown>
           <Nav className="my-4 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
             <Nav.Link href="#home">
               <Link to="/" className="text-decoration-none text-secondary">
@@ -20,18 +24,12 @@ export const NavbarComponent = () => {
               </Link>
             </Nav.Link>
             <Nav.Link href="/#about">About</Nav.Link>
-            <Nav.Link href="/#team">Team</Nav.Link>
             <Nav.Link href="/#prices">Prices</Nav.Link>
+            <Nav.Link href="/#team">Team</Nav.Link>
           </Nav>
-            <Button className="ml-5" variant="primary">
-              <Link to="/signup" className="text-white text-decoration-none">
-                Registration
-              </Link>
-            </Button>
-          <Form className="d-flex">
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
+

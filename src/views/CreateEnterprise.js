@@ -14,7 +14,7 @@ export const CreateEnterprise = () => {
   const { runContractFunction, data, error } = useWeb3Contract({
     abi,
     contractAddress,
-    functionName: 'createEnterprise',
+    functionName: 'createTask',
     params: {
       _name: value.name,
       _rfc: value.rfc,
@@ -24,18 +24,21 @@ export const CreateEnterprise = () => {
   })
 
   useEffect(async () => {
-    await enableWeb3()
+    if (!isWeb3Enabled) {
+      await enableWeb3()
+    }
   }, [])
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const resp = await runContractFunction()
+    reset()
+  }
 
   return (
     <>
       <NavbarComponent />
 
-      {
-        !isWeb3Enabled &&
-        <button onClick={enableWeb3} className="btn btn-primary">Connect</button>
-      }
       <div className="container">
         <div className="row gx-5 justify-content-center">
           <div className="col-lg-8 col-xl-6 py-4 px-4 px-md-5 mb-5 mt-5">
@@ -50,43 +53,63 @@ export const CreateEnterprise = () => {
                   <hr />
                 </div>
                 <div className="form-floating mb-3">
-                  <label for="name">Your company name</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="titulo"
-                    name="titulo"
-                    value={value.titulo}
-                    onChange={handleInputChange}
-                    required
-
-
-
-
-                    className="form-control"
                     id="name"
-                    type="text"
+                    name="name"
+                    value={value.name}
+                    onChange={handleInputChange}
                     placeholder="Enter your name..."
+                    required
                   />
+                  <label for="name">Your company name</label>
                 </div>
 
                 <div className="form-floating mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="rfc"
+                    name="rfc"
+                    value={value.rfc}
+                    onChange={handleInputChange}
+                    placeholder="EXAM00112233"
+                    required
+                  />
                   <label for="rfc">RFC</label>
-                  <input className="form-control" id="rfc" type="text" placeholder="EXAM00112233" />
                 </div>
 
                 <div className="form-floating mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="mail"
+                    name="email"
+                    value={value.email}
+                    onChange={handleInputChange}
+                    placeholder="name@example.com"
+                    required
+                  />
                   <label for="mail">Email</label>
-                  <input className="form-control" id="mail" type="email" placeholder="name@example.com" />
                 </div>
 
                 <div className="form-floating mb-3">
+                  <input
+                    type="tel"
+                    className="form-control"
+                    id="phone"
+                    name="phone"
+                    value={value.phone}
+                    onChange={handleInputChange}
+                    placeholder="(123) 456-7890"
+                    required
+                  />
                   <label for="phone">Phone</label>
-                  <input className="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
                 </div>
 
                 <div className="d-grid">
-                  <button className="btn btn-primary btn-lg" id="submitButton" type="submit" onClick={runContractFunction} >
+                  <button className="btn btn-primary btn-lg" id="submitButton" type="submit" onClick={handleSubmit} >
                     Submit
                   </button>
                 </div>

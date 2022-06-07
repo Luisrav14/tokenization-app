@@ -61,35 +61,7 @@ export const Home = () => {
                         <ul className="list-unstyled mb-4">
                             <li className="mb-2">
                                 <i className="bi bi-check text-primary"></i>
-                                <strong>1 users</strong>
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                5GB storage
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Unlimited public projects
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Community access
-                            </li>
-                            <li className="mb-2 text-muted">
-                                <i className="bi bi-x"></i>
-                                Unlimited private projects
-                            </li>
-                            <li className="mb-2 text-muted">
-                                <i className="bi bi-x"></i>
-                                Dedicated support
-                            </li>
-                            <li className="mb-2 text-muted">
-                                <i className="bi bi-x"></i>
-                                Free linked domain
-                            </li>
-                            <li className="text-muted">
-                                <i className="bi bi-x"></i>
-                                Monthly status reports
+                                <strong>5 contracts</strong>
                             </li>
                         </ul>
                         <div className="d-grid"><a className="btn btn-outline-primary" href="#!">Choose plan</a></div>
@@ -104,41 +76,13 @@ export const Home = () => {
                             Pro
                         </div>
                         <div className="mb-3">
-                            <span className="display-4 fw-bold">$9</span>
+                            <span className="display-4 fw-bold">$9.99</span>
                             <span className="text-muted">/ mo.</span>
                         </div>
                         <ul className="list-unstyled mb-4">
                             <li className="mb-2">
                                 <i className="bi bi-check text-primary"></i>
-                                <strong>5 users</strong>
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                5GB storage
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Unlimited public projects
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Community access
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Unlimited private projects
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Dedicated support
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Free linked domain
-                            </li>
-                            <li className="text-muted">
-                                <i className="bi bi-x"></i>
-                                Monthly status reports
+                                <strong>50 contracts</strong>
                             </li>
                         </ul>
                         <div className="d-grid"><a className="btn btn-primary" href="#!">Choose plan</a></div>
@@ -151,42 +95,13 @@ export const Home = () => {
                     <div className="card-body p-5">
                         <div className="small text-uppercase fw-bold text-muted">Enterprise</div>
                         <div className="mb-3">
-                            <span className="display-4 fw-bold">$49</span>
+                            <span className="display-4 fw-bold">$49.99</span>
                             <span className="text-muted">/ mo.</span>
                         </div>
                         <ul className="list-unstyled mb-4">
                             <li className="mb-2">
                                 <i className="bi bi-check text-primary"></i>
-                                <strong>Unlimited users</strong>
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                5GB storage
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Unlimited public projects
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Community access
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Unlimited private projects
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                Dedicated support
-                            </li>
-                            <li className="mb-2">
-                                <i className="bi bi-check text-primary"></i>
-                                <strong>Unlimited</strong>
-                                linked domains
-                            </li>
-                            <li className="text-muted">
-                                <i className="bi bi-check text-primary"></i>
-                                Monthly status reports
+                                <strong>Unlimited contracts</strong>
                             </li>
                         </ul>
                         <div className="d-grid"><a className="btn btn-outline-primary" href="#!">Choose plan</a></div>
@@ -211,7 +126,7 @@ export const Home = () => {
           <div className="row gx-5 justify-content-center">
             <div className="col-lg-4 col-md-6 mb-5 max-width-380">
               <div className="card h-100 shadow border-0">
-                <img className="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                <img className="card-img-top" src={images.luis} alt="..." />
                 <div className="card-body p-4">
                   <h5 className="card-title mb-3">Luis Raul Valenzuela Martinez</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
@@ -225,7 +140,7 @@ export const Home = () => {
             </div>
             <div className="col-lg-4 col-md-6 mb-5 max-width-380">
               <div className="card h-100 shadow border-0">
-                <img className="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                <img className="card-img-top" src={images.neto} alt="..." />
                 <div className="card-body p-4">
                   <h5 className="card-title mb-3">Ernesto Amaya Rocha</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
@@ -240,7 +155,7 @@ export const Home = () => {
 
             <div className="col-lg-4 col-md-6 mb-5 max-width-380">
               <div className="card h-100 shadow border-0">
-                <img className="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                <img className="card-img-top" src={images.pablo} alt="..." />
                 <div className="card-body p-4">
                   <h5 className="card-title mb-3">Pablo Cesar Cordova Tapia</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
@@ -255,7 +170,7 @@ export const Home = () => {
 
             <div className="col-lg-4 col-md-6 mb-5 max-width-380">
               <div className="card h-100 shadow border-0">
-                <img className="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                <img className="card-img-top" src={images.paola} alt="..." />
                 <div className="card-body p-4">
                   <h5 className="card-title mb-3">Paola Rosales Verdín</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
@@ -270,7 +185,7 @@ export const Home = () => {
 
             <div className="col-lg-4 col-md-6 mb-5 max-width-380">
               <div className="card h-100 shadow border-0">
-                <img className="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                <img className="card-img-top" src={images.ramon} alt="..." />
                 <div className="card-body p-4">
                   <h5 className="card-title mb-3">Ramon Morales Sanchez</h5>
                   {/* <a className="text-decoration-none link-dark stretched-link" href="#">
