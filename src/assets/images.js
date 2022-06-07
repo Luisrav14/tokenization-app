@@ -1,8 +1,9 @@
+import AboutImage from "./images/about.jpg";
+import HeaderImage from "./images/header-image.jpg";
 import Logo from "./images/logo.svg";
+import LogoNav from "./images/logoNav.png";
 import MainLogo from "./images/nftgatorlogo.png";
 import SampleLogo from "./images/sampleLogo.png";
-import LogoNav from "./images/logoNav.png";
-import HeaderImage from "./images/header-image.jpg";
 
 export default {
   Logo: Logo,
@@ -10,4 +11,5 @@ export default {
   SampleLogo: SampleLogo,
   LogoNav: LogoNav,
   HeaderImage: HeaderImage,
+  AboutImage: AboutImage,
 };

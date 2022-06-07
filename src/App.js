@@ -1,16 +1,14 @@
-import React from "react";
-
-import "./assets/css/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { MoralisProvider } from "react-moralis";
+import "./assets/css/App.css";
+import { AppRouter } from "./routes/AppRouter";
 
-import Routes from "./routes/routes";
 
-function App() {
+export const App = () => {
   return (
-    <>
-      <Routes></Routes>
-    </>
+    <MoralisProvider appId="5777" serverUrl="http://localhost:8545">
+      <AppRouter />
+    </MoralisProvider>
   );
 }
-
-export default App;

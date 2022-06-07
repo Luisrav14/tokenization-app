@@ -19,9 +19,9 @@ export const NavbarComponent = () => {
                 Home
               </Link>
             </Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#team">Team</Nav.Link>
-            <Nav.Link href="#prices">Prices</Nav.Link>
+            <Nav.Link href="/#about">About</Nav.Link>
+            <Nav.Link href="/#team">Team</Nav.Link>
+            <Nav.Link href="/#prices">Prices</Nav.Link>
           </Nav>
             <Button className="ml-5" variant="primary">
               <Link to="/signup" className="text-white text-decoration-none">
